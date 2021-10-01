@@ -5,9 +5,131 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #373b69;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* App component */
+
+.Pics__container {
+  background-color: #373b69;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Header component */
+
+.header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #743535;
+  padding: 15px;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(209, 209, 209);
+}
+.header a:hover {
+  color: rgb(185, 184, 184);
+}
+
+input {
+  margin-top: 15px;
+  width: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  outline-width: 0;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Pics component */
+.Pics {
+  background-color: #4f5596;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 1rem;
+  width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Pics img {
+  max-width: 100%;
+}
+
+.Pics__info {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.Pics__info h3 {
+  margin: 0;
+}
+
+.Pics_likeB {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+}
+
+.Pics__thumb {
+  color: white;
+}
+.Pics__thumbsChange {
+  color: blue;
+}
+
+/* Like */
+
+.Like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Liked Pics */
+.LikedPic {
+  background-color: #4f5596;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 1rem;
+  width: 250px;
+}
+.LikedPic img {
+  max-width: 100%;
+}
+
+.LikedPic__info {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.LikedPic__info h3 {
+  margin: 0;
 }
